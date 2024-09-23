@@ -1,4 +1,5 @@
 
+const modal=document.getElementById('my_modal_1');
 // donation button function
 document.getElementById('btn-donation-card').addEventListener('click',function(){
     showDonationAndHistory('donate-card')
@@ -51,7 +52,7 @@ document.getElementById('btn-donate-card-1').addEventListener('click',function()
         
     `
     donateHistory.appendChild(historyInfo);
-    
+    modal.showModal();
 })
 
 // donation card function-2
@@ -91,10 +92,11 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
         
     `
     donateHistory.appendChild(historyInfo);
+    modal.showModal();
 
 })
 
-// donation card function-2
+// donation card function-3
 document.getElementById('btn-donate-card-3').addEventListener('click',function(){
     const inputValue=donationMoney('input-card-3');
     
@@ -118,6 +120,7 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
     const donationAmountNumber=parseFloat(donationAmount);
     const addDonationAmount= donationAmountNumber + inputValue;
     document.getElementById('card-amount-add-3').innerText = addDonationAmount.toFixed(2);
+    modal.showModal();
 
     // add history
     const donateHistory=document.getElementById('history-info')
@@ -131,12 +134,15 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
         
     `
     donateHistory.appendChild(historyInfo);
+    modal.showModal();
+
+    // modal button function
+
 
 })
 
 
 //    
-// modal button function
 document.getElementById('btn-clear').addEventListener('click',function(){
     clearInputValue('input-card-1')
     clearInputValue('input-card-2')
