@@ -44,41 +44,46 @@
     <!-- color and font custom code end -->
   </head>
   <body class="lexend container mx-auto">
-    <!-- navbar start -->
-    <section class="bg-secondary pb-8 pt-2 px-8 mb-8">
-      <nav>
-        <div class="flex justify-between">
-          <div>
-            <button
-              id="btn-home"
-              class="btn bg-primary px-6 text-sm font-lexend font-semibold hover:bg-gradient-to-r from-[#0061ff] to-[#60efff] hover:text-white"
-            >
-              Home
-            </button>
-          </div>
-          <div class="flex items-center space-x-3">
+    <header class="sticky top-0">
+      <!-- navbar start -->
+      <section class="bg-secondary pb-8 pt-2 px-2 lg:px-8 mb-8">
+        <nav>
+          <div class="flex justify-between">
             <div>
-              <img src="./assets/logo.png" alt="" />
+              <button
+                id="btn-home"
+                class="btn bg-primary px-6 text-sm font-lexend font-semibold hover:bg-gradient-to-r from-[#0061ff] to-[#60efff] hover:text-white"
+              >
+                Home
+              </button>
             </div>
-            <div>
-              <h1 class="text-2xl font-bold font-lexend">Donate Bangladesh</h1>
+            <div class="flex items-center space-x-3">
+              <div>
+                <img src="./assets/logo.png" alt="" />
+              </div>
+              <div>
+                <h1 class="hidden lg:block text-2xl font-bold font-lexend">
+                  Donate Bangladesh
+                </h1>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <div>
+                <img src="./assets/coin.png" alt="" />
+              </div>
+              <div class="text-sm font-bold text-black">
+                <span id="account-balance">5000</span>
+                <span> BDT</span>
+              </div>
             </div>
           </div>
-          <div class="flex items-center space-x-2">
-            <div>
-              <img src="./assets/coin.png" alt="" />
-            </div>
-            <div class="text-sm font-bold text-black">
-              <span id="account-balance">5000</span>
-              <span> BDT</span>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!-- navbar end -->
+        </nav>
+      </section>
+      <!-- navbar end -->
+    </header>
+
     <!-- FAQ start -->
-    <section class="mx-16 m">
+    <section class="mx-2 lg:mx-16">
       <div class="text-4xl font-bold mb-8">
         <h1>Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
       </div>
