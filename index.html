@@ -46,7 +46,8 @@
           <div class="flex justify-between">
             <div>
               <button
-                class="btn bg-primary px-6 text-sm font-lexend font-semibold"
+                id="btn-blog"
+                class="btn bg-primary px-6 text-sm font-lexend font-semibold hover:bg-gradient-to-r from-[#0061ff] to-[#60efff] hover:text-white"
               >
                 Bloog
               </button>
@@ -78,14 +79,22 @@
         </nav>
       </section>
       <section>
-        <div class="flex justify-center gap-4 mt-8 lg:mt-14 mb-6">
+        <div class="flex justify-center gap-4 mt-8 lg:mt-14 mb-6 pb-6">
           <div>
-            <button id="btn-donation-card" class="btn bg-primary px-6">
+            <button
+              id="btn-donation-card"
+              class="bg-primary btn px-6 hover:bg-gradient-to-r from-[#0061ff] to-[#60efff]"
+            >
               Donation
             </button>
           </div>
           <div>
-            <button id="btn-history" class="btn px-6">History</button>
+            <button
+              id="btn-history"
+              class="btn px-6 hover:bg-gradient-to-r from-[#0061ff] to-[#60efff]"
+            >
+              History
+            </button>
           </div>
         </div>
       </section>
@@ -133,7 +142,11 @@
                 id=""
               />
               <div>
-                <button id="btn-donate-card-1" class="btn bg-primary w-full">
+                <button
+                  onclick="my_modal_1.showModal()"
+                  id="btn-donate-card-1"
+                  class="btn bg-primary w-full hover:bg-gradient-to-r from-[#0061ff] to-[#60efff]"
+                >
                   Donate Now
                 </button>
               </div>
@@ -155,7 +168,7 @@
                 <img src="./assets/coin.png" alt="" />
               </div>
               <p>
-                <span>0</span>
+                <span id="card-amount-add-2">0</span>
                 <span> BDT</span>
               </p>
             </div>
@@ -174,14 +187,20 @@
                 those in need.
               </p>
               <input
+                id="input-card-2"
                 class="w-full py-2 px-2 input input-bordered"
                 type="text"
                 name=""
                 placeholder="Write Donate Amount"
-                id=""
               />
               <div>
-                <button class="btn bg-primary w-full">Donate Now</button>
+                <button
+                  onclick="my_modal_1.showModal()"
+                  id="btn-donate-card-2"
+                  class="btn bg-primary w-full hover:bg-gradient-to-r from-[#0061ff] to-[#60efff]"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
@@ -201,7 +220,7 @@
                 <img src="./assets/coin.png" alt="" />
               </div>
               <p>
-                <span>0</span>
+                <span id="card-amount-add-3">0</span>
                 <span> BDT</span>
               </p>
             </div>
@@ -221,16 +240,17 @@
                 fair representation for all citizens.
               </p>
               <input
+                id="input-card-3"
                 class="w-full py-2 px-2 input input-bordered"
                 type="text"
                 name=""
                 placeholder="Write Donate Amount"
-                id=""
               />
               <div>
                 <button
                   onclick="my_modal_1.showModal()"
-                  class="btn bg-primary w-full"
+                  id="btn-donate-card-3"
+                  class="btn bg-primary w-full hover:bg-gradient-to-r from-[#0061ff] to-[#60efff]"
                 >
                   Donate Now
                 </button>
@@ -260,7 +280,7 @@
           </div>
           <h1 class="text-xl font-bold my-2">Successfully</h1>
           <button
-            id=""
+            id="btn-clear"
             class="btn bg-primary px-10 btn-md hover:bg-primary transition-colors ease-in duration-300 text-white"
           >
             Close Confirmation
