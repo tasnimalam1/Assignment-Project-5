@@ -10,8 +10,8 @@ function showDonationAndHistory(id){
 // get input value function
 function donationMoney(id){
     const inputValue=document.getElementById(id).value;
-    const inputNumber=parseFloat(inputValue);
-    return inputNumber;
+    // const inputNumber=parseFloat(inputValue);
+    return inputValue;
 }
 
 // clear input value function

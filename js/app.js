@@ -14,29 +14,31 @@ document.getElementById('btn-history').addEventListener('click',function(){
 })
 // donation card function-1
 document.getElementById('btn-donate-card-1').addEventListener('click',function(){
-    const inputValue=donationMoney('input-card-1');
+    const inputValue=donationMoney('input-card-1')
 
     // Validation 
     if(inputValue <= 0 || isNaN(inputValue)){
         return alert('Invalid Donation Amount')
-    }   
+    }
+        
+    const inputNumber=parseFloat(inputValue);
     
 
 
     const accountBalance=document.getElementById('account-balance').innerText;
     const accountNumber=parseFloat(accountBalance);
 
-    if(inputValue > accountNumber){
+    if(inputNumber > accountNumber){
         return alert('Your Donation Amount Cannot exceed your Balance');
     }
 
-    const newBalance= accountNumber - inputValue;
+    const newBalance= accountNumber - inputNumber;
     document.getElementById('account-balance').innerText = newBalance;
 
     // add amount into card section
     const donationAmount=document.getElementById('card-amount-add').innerText;
     const donationAmountNumber=parseFloat(donationAmount);
-    const addDonationAmount= donationAmountNumber + inputValue;
+    const addDonationAmount= donationAmountNumber + inputNumber;
     document.getElementById('card-amount-add').innerText = addDonationAmount.toFixed(2);
 
     // add history
@@ -45,7 +47,7 @@ document.getElementById('btn-donate-card-1').addEventListener('click',function()
     historyInfo.className = 'rounded-xl shadow-2xl py-4 px-8 bg-white mb-2'
     historyInfo.innerHTML +=`
             <p>
-            ${inputValue} Taka is Donated for donate for Flood at
+            ${inputNumber} Taka is Donated for donate for Flood at
             Noakhali,Bangladesh
             </p>
             <p>Date: ${new Date().toString('en-GB')}</p>
@@ -64,20 +66,22 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
         return alert('Invalid Donation Amount')
     }
 
+    const inputNumber=parseFloat(inputValue);
+
     const accountBalance=document.getElementById('account-balance').innerText;
     const accountNumber=parseFloat(accountBalance);
 
-    if(inputValue > accountNumber){
+    if(inputNumber > accountNumber){
         return alert('Your Donation Amount Cannot exceed your Balance');
     }
 
-    const newBalance= accountNumber - inputValue;
+    const newBalance= accountNumber - inputNumber;
     document.getElementById('account-balance').innerText = newBalance;
 
     // add amount into card section
     const donationAmount=document.getElementById('card-amount-add-2').innerText;
     const donationAmountNumber=parseFloat(donationAmount);
-    const addDonationAmount= donationAmountNumber + inputValue;
+    const addDonationAmount= donationAmountNumber + inputNumber;
     document.getElementById('card-amount-add-2').innerText = addDonationAmount.toFixed(2);
 
     // add history
@@ -86,7 +90,7 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
     historyInfo.className = 'rounded-xl shadow-2xl py-4 px-8 bg-white mb-2'
     historyInfo.innerHTML +=`
             <p>
-            ${inputValue} Taka is Donate for Flood Relief in Feni,Bangladesh
+            ${inputNumber} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh
             </p>
             <p>Date: ${new Date().toString('en-GB')}</p>
         
@@ -105,20 +109,22 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
         return alert('Invalid Donation Amount')
     }
 
+    const inputNumber=parseFloat(inputValue);
+
     const accountBalance=document.getElementById('account-balance').innerText;
     const accountNumber=parseFloat(accountBalance);
 
-    if(inputValue > accountNumber){
+    if(inputNumber > accountNumber){
         return alert('Your Donation Amount Cannot exceed your Balance');
     }
 
-    const newBalance= accountNumber - inputValue;
+    const newBalance= accountNumber - inputNumber;
     document.getElementById('account-balance').innerText = newBalance;
 
     // add amount into card section
     const donationAmount=document.getElementById('card-amount-add-3').innerText;
     const donationAmountNumber=parseFloat(donationAmount);
-    const addDonationAmount= donationAmountNumber + inputValue;
+    const addDonationAmount= donationAmountNumber + inputNumber;
     document.getElementById('card-amount-add-3').innerText = addDonationAmount.toFixed(2);
     modal.showModal();
 
@@ -128,7 +134,7 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
     historyInfo.className = 'rounded-xl shadow-2xl py-4 px-8 bg-white mb-2'
     historyInfo.innerHTML +=`
             <p>
-            ${inputValue} Taka is Aid for Injured in the Quota Movement,Bangladesh
+            ${inputNumber} Taka is Donated for Aid for Injured in the Quota Movement,Bangladesh
             </p>
             <p>Date: ${new Date().toString('en-GB')}</p>
         
