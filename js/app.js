@@ -18,7 +18,9 @@ document.getElementById('btn-donate-card-1').addEventListener('click',function()
 
     // Validation 
     if(inputValue <= 0 || isNaN(inputValue)){
-        return alert('Invalid Donation Amount')
+        alert('Invalid Donation Amount');
+        const clear=document.getElementById('input-card-1').value='';
+        return clear;
     }
         
     const inputNumber=parseFloat(inputValue);
@@ -29,7 +31,9 @@ document.getElementById('btn-donate-card-1').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        return alert('Your Donation Amount Cannot exceed your Balance');
+        alert('Your Donation Amount Cannot exceed your Balance');
+        const clear=document.getElementById('input-card-1').value='';
+        return clear;
     }
 
     const newBalance= accountNumber - inputNumber;
@@ -63,7 +67,9 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
     
     // Validation 
     if(inputValue <= 0 || isNaN(inputValue)){
-        return alert('Invalid Donation Amount')
+        alert('Invalid Donation Amount');
+        const clear=document.getElementById('input-card-2').value='';
+        return clear;
     }
 
     const inputNumber=parseFloat(inputValue);
@@ -72,7 +78,9 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        return alert('Your Donation Amount Cannot exceed your Balance');
+        alert('Your Donation Amount Cannot exceed your Balance');
+        const clear=document.getElementById('input-card-2').value='';
+        return clear;
     }
 
     const newBalance= accountNumber - inputNumber;
@@ -106,7 +114,9 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
     
     // Validation 
     if(inputValue <= 0 || isNaN(inputValue)){
-        return alert('Invalid Donation Amount')
+        alert('Invalid Donation Amount')
+        const clear=document.getElementById('input-card-3').value='';
+        return clear;
     }
 
     const inputNumber=parseFloat(inputValue);
@@ -115,7 +125,9 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        return alert('Your Donation Amount Cannot exceed your Balance');
+        alert('Your Donation Amount Cannot exceed your Balance');
+        const clear=document.getElementById('input-card-3').value='';
+        return clear;
     }
 
     const newBalance= accountNumber - inputNumber;
