@@ -31,7 +31,7 @@ document.getElementById('btn-donate-card-1').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        alert('Your Donation Amount Cannot exceed your Balance');
+        alert('You Don`t Have Sufficient Balance');
         const clear=document.getElementById('input-card-1').value='';
         return clear;
     }
@@ -78,7 +78,7 @@ document.getElementById('btn-donate-card-2').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        alert('Your Donation Amount Cannot exceed your Balance');
+        alert('You Don`t Have Sufficient Balance');
         const clear=document.getElementById('input-card-2').value='';
         return clear;
     }
@@ -125,7 +125,7 @@ document.getElementById('btn-donate-card-3').addEventListener('click',function()
     const accountNumber=parseFloat(accountBalance);
 
     if(inputNumber > accountNumber){
-        alert('Your Donation Amount Cannot exceed your Balance');
+        alert('You Don`t Have Sufficient Balance');
         const clear=document.getElementById('input-card-3').value='';
         return clear;
     }
